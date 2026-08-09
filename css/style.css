@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigasyon Bar */
+header {
+    background-color: #1E1E1E;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #4DB6AC;
+    text-decoration: none;
+}
+
+.lang-switch a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.lang-switch a.active, .lang-switch a:hover {
+    color: #4DB6AC;
+    opacity: 1;
+}
+
+/* Hero (Vitrin) Bölümü */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color: #4DB6AC;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #aaaaaa;
+    margin-bottom: 30px;
+}
+
+/* İndirme Butonları */
+.download-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.play-badge img {
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.play-badge img:hover {
+    transform: scale(1.05);
+}
+
+.version-info {
+    font-size: 14px;
+    color: #C0933A; /* Premium Gold */
+    font-weight: bold;
+}
+
+/* Afiş Bölümü */
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(77, 182, 172, 0.15); /* Turkuaz Parlama */
+}
+
+/* Basit Sayfalar (Privacy vb) */
+.page-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1E1E1E;
+    border-radius: 12px;
+}
+
+.page-container h1 { color: #4DB6AC; margin-bottom: 20px; }
+.page-container h2 { color: #C0933A; margin-top: 20px; margin-bottom: 10px; }
+.page-container p { margin-bottom: 15px; color: #cccccc; }
+
+/* Destek Ol (Support) Bölümü */
+.support-box {
+    text-align: center;
+    padding: 40px;
+    background: rgba(192, 147, 58, 0.1); /* Premium Gold Transparan */
+    border: 2px solid #C0933A;
+    border-radius: 16px;
+    margin-top: 30px;
+}
+
+.support-btn {
+    display: inline-block;
+    background-color: #C0933A;
+    color: #121212;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.support-btn:hover {
+    background-color: #e0b04a;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0a0a0a;
+    color: #666;
+    margin-top: 50px;
+}
+
+footer a { color: #4DB6AC; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+    .hero { flex-direction: column; text-align: center; padding: 20px; }
+    .hero-text h1 { font-size: 36px; }
+    header { padding: 20px; }
+}
